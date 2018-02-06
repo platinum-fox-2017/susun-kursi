@@ -17,7 +17,6 @@ function generateSeats(row) {
 	}
 	return seats
 }
-debugger
 function managePerson(arr, rowSeats) {
 	let seats = generateSeats(rowSeats)
 	let row = 0
