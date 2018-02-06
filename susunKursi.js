@@ -10,32 +10,32 @@
 
 'use strict'
 
-function generateSeats(row) {
-	let seats = []
-	for(let i=0; i<rowa; i++) {
+function generateSeat(row) {
+	let seat = []
+	for(let i=0; i<row; i++) {
 		seat.push([])
 	}
-	return seats
+	return seat
 }
 
 function managePerson(arr, rowSeats) {
-	let seats = generateSeat(rowSeats)
+	let seat = generateSeat(rowSeats)
 	let row = 0
-
-	for(let i=0; i<arr.length-1; i++) {
+	
+	for(let i = 0; i < arr.length; i++) {
 		seat[row].push(arr[i])
-		if(row <= 2) {
+		if(row < 2) {
 			row++
 		} else {
-			row == 0
+			row = 0
 		}
 	}
-	printSeats(seats)
+	printSeats(seat)
 }
 
-function printSeats(seats) {
-	for(let i=1; i<seats.length; i++) {
-		console.log(`Baris ${i} : `, seats[i])
+function printSeats(seat) {
+	for(let i=0; i<seat.length; i++) {
+		console.log(`Baris ${i} : `, seat[i])
 	}
 }
 
