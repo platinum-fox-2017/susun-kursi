@@ -29,7 +29,6 @@ function managePerson(arr, rowSeats) {
     } else {
       row = 0;
 	}
-	debugger
   }
   printSeats(seats);
 }
