@@ -15,7 +15,6 @@ function generateSeats(row) {
 	for(let i=0; i<row; i++) {
 		seats.push([])
 	}
-	// console.log(seats)
 	return seats
 }
 
@@ -25,19 +24,13 @@ function managePerson(arr, rowSeats) {
 	console.log(seats.length)
 
 	for(let i=0; i<arr.length; i++) {
-		// console.log(arr[i])
 		seats[row].push(arr[i])
 		if(row < rowSeats-1) {
-			// console.log(row,"sebelum ++")
 			row++
-			// console.log(row,"setelah ++")
 		} else {
-			// console.log(row,"sebelum 0")
 			row = 0
-			// console.log(row,"setelah 0")
 		}
 	}
-	// console.log(seats)
 	printSeats(seats)
 }
 
