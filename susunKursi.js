@@ -12,9 +12,7 @@
 
 function generateSeats(row) {
     let seats = []
-    // debugger;
 	for(let i=0; i<row; i++) {
-        // debugger;
 		seats.push([])
 	}
 	return seats
