@@ -24,21 +24,25 @@ function managePerson(arr, rowSeats) {
 
 	for(let i=0; i<arr.length; i++) {
 		seats[row].push(arr[i])
-		if(row < 2) {
+		if(row < rowSeats - 1) {
 			row++
 		} else {
 			row = 0
 		}
 	}
-	return printSeats(seats)
+
+	return	printSeats(seats)
+
 }
 
 function printSeats(seats) {
-	let tmp = ""
+	
 	for(let i=0; i<seats.length; i++) {
-		tmp += `Baris ${i} : ${seats[i]} \n `
+		console.log(`Baris ${i} : `, seats[i])
 	}
-	return tmp
+
+	return ""
+	
 }
 
 console.log(managePerson(['a','b','c','d','e','f','g','h','i','j'], 3))
