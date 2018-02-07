@@ -25,7 +25,7 @@ function managePerson(arr, rowSeats) {
 	for(let i=0; i<arr.length; i++) {
 		// console.log(seats[row])
 		seats[row].push(arr[i])
-		if(row < 2) {
+		if(row < rowSeats-1) {
 			row++
 		} else {
 			row = 0
@@ -40,4 +40,4 @@ function printSeats(seats) {
 	}
 }
 
-managePerson(['a','b','c','d','e','f','g','h','i','j'], 3)
+managePerson(['a','b','c','d','e','f','g','h','i','j'], 4)
